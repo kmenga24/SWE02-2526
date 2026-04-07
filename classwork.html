@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classwork 02 - Quotes API</title>
+    <link rel="stylesheet" href="classwork.css">
+</head>
+<body>
+    <div class="container">
+        <h1>✨ Quote of the Moment ✨</h1>
+        
+        <div class="quote-card">
+            <p class="quote-text" id="quoteText">Click the button to get an inspiring quote!</p>
+            <p class="quote-author" id="quoteAuthor">— Unknown</p>
+        </div>
+
+        <button id="getQuoteBtn">Get New Quote</button>
+        
+        <div class="category-selector">
+            <label for="category">Choose category:</label>
+            <select id="category">
+                <option value="">Random</option>
+                <option value="inspirational">Inspirational</option>
+                <option value="love">Love</option>
+                <option value="life">Life</option>
+                <option value="success">Success</option>
+                <option value="happiness">Happiness</option>
+            </select>
+        </div>
+
+        <div class="loading" id="loading" style="display: none;">Loading quote...</div>
+    </div>
+
+    <script src="classwork.js"></script>
+</body>
+</html>
